@@ -44,12 +44,14 @@
     }
   });
 
+  /*Предзагрузка фотографий*/
+
   for (var i = 1; i <= 3; i++) {
     var img = document.createElement('img');
     img.src = 'img/slide' + i + '.png'
     img.style.position = 'absolute';
     img.style.top = '-1000px';
-    img.style.left = '-1000px';
+    img.style.left = '-800px';
     body.appendChild(img);
   }
 })();

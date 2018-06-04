@@ -895,3 +895,82 @@ p.shop-work-time {
   margin-left: 8px;
   border-radius: 30px;
 }
+
+.shop-adress {
+  position: relative;
+}
+
+.shop-adress img {
+  display: block;
+  margin: 0 auto;
+}
+
+.shop-adress .map-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-adress-details {
+  position: absolute;
+  right: 378px;
+  top: 62px;
+  padding: 29px 23px;
+  z-index: 10;
+
+  width: 300px;
+
+  background-color: #ffffff;
+  border-radius: 15px;
+  transition: transform 200ms;
+}
+
+.shop-adress-details.hide {
+  transform: scale(0);
+}
+
+.shop-adress-details p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.shop-adress-details b {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #323232;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.shop-adress-details p:not(:first-child) {
+  margin-top: 18px;
+}
+
+.shop-adress-details p:last-of-type {
+  margin-top: 3px;
+}
+
+.shop-adress-details button {
+  margin-top: 24px;
+  margin-bottom: 1px;
+  padding: 10px 28px;
+
+  border-radius: 25px;
+}
+
+#google-map {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+
+  width: 1200px;
+  height: 430px;
+}

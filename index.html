@@ -222,13 +222,17 @@
     <footer class="page-footer">
       <section class="shop-adress">
         <h2 class="visually-hidden">Адрес</h2>
-        <img src="img/google-map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+        <div class="map-wrapper">
+          <img src="img/google-map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+          <div id="google-map"></div>
+        </div>
         <div class="shop-adress-details">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
+          <p>Адрес главного офиса<br> и офлайн-магазина:</p>
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           <p>Для заказов по телефону:</p>
           <b>8 812 450-25-25</b>
           <p>(с 10 до 20 ежедневно)</p>
+          <button class="button" type="submit">Форма обратной связи</button>
         </div>
       </section>
 
@@ -261,6 +265,10 @@
         <p>Сделано в <span>HTML Academy</span> © 2017</p>
       </div>
     </footer>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC71zUKBWJYDCYuYWP3vlb5oapAoG5iO9s&callback=initMap">
+    </script>
+    <script src="js/google-map.js"></script>
     <script src="js/slider.js"></script>
   </body>
 </html>
