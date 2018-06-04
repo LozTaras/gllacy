@@ -19,11 +19,18 @@ function initMap() {
   var adressDetails = document.querySelector('.shop-adress-details');
   var map = document.querySelector('.map-wrapper');
 
-  map.addEventListener('mousedown', function() {
+  map.addEventListener('mousedown', function(evt) {
+    var target = evt.target;
+
+    while(target != this) {
+      if(target.classList.contains('shop-adress-details')) return;
+      target = target.parentNode;
+    }
+
     adressDetails.classList.add('hide');
   });
 
-  map.addEventListener('mouseup', function() {
+  map.addEventListener('mouseup', function(evt) {
     adressDetails.classList.remove('hide');
   });
 })();
