@@ -17,8 +17,6 @@ body {
   font-weight: 500;
 
   background-color: #849d8f;
-  background-image: url('../img/slide3.png');
-  background-image: url('../img/slide2.png');
   background-image: url('../img/slide1.png');
   background-repeat: no-repeat;
   background-position: center 0;
@@ -53,6 +51,8 @@ body {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  margin-bottom: 150px;
 }
 
 .site-navigation {
@@ -510,7 +510,7 @@ p.shop-work-time {
 }
 
 .main-slider .slider-gallery {
-  min-height: 500px;
+  min-height: 350px;
   padding: 0;
   margin: 0;
   padding-right: 54px;
@@ -524,8 +524,8 @@ p.shop-work-time {
   width: 690px;
   padding: 0;
   margin: 0 auto;
-  margin-top: 275px;
-  margin-left: 201px;
+  margin-top: 125px;
+  margin-left: 229px;
 
   opacity: 0;
   transition: all 500ms;
@@ -543,7 +543,7 @@ p.shop-work-time {
 
 .slider-gallery-btn {
   position: absolute;
-  left: 435px;
+  left: 462px;
   bottom: 13px;
 
   display: block;
@@ -566,8 +566,8 @@ p.shop-work-time {
 
 .slider-control {
   position: absolute;
-  top: 431px;
-  left: -39px;
+  top: 281px;
+  left: -12px;
 
   list-style: none;
 }
@@ -593,4 +593,305 @@ p.shop-work-time {
 
 .slider-control .slide-show button {
   background-color: #ffffff;
+}
+
+.profitable-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+
+  list-style: none;
+}
+
+.profitable-list li {
+  width: 560px;
+
+  border-radius: 15px;
+}
+
+.profitable-list li:first-child {
+  background: #6f0006 url('../img/raspberry-background.jpg') no-repeat;
+}
+
+.profitable-list li:last-child {
+  background: #653f2f url('../img/chocolate-background.jpg') no-repeat;
+}
+
+.profitable-list h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-left: 19px;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.profitable-list p {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-left: 19px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.profitable-list button {
+  float: right;
+  margin-right: 21px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  padding: 10px 22px;
+  border-radius: 50px;
+
+  text-shadow: none;
+}
+
+.hit-products-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.hit-products-list li {
+  position: relative;
+
+  width: 267px;;
+  padding: 0;
+  margin: 0;
+}
+
+.hit-products-list li::after {
+  content: url('../img/hit-icon.svg');
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hit-products-list .hit-product-price {
+  position: absolute;
+  left: 0;
+  top: 164px;
+
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hit-products-list .hit-product-price span {
+  margin-left: 36px;
+
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.hit-products-list .hit-product-price span::after {
+  content: url('../img/Р.svg');
+
+  position: absolute;
+  top: 6px;
+  left: 80px;
+}
+
+.hit-products-list a {
+  display: block;
+  margin-top: 7px;
+
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hit-products-list a:hover {
+  color: #ffbc9e;
+}
+
+.hit-products-list a span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hit-products-list a:hover span {
+  border-color: rgba(255, 188, 158, 0.2);
+}
+
+.shop-features {
+  margin-top: 38px;
+}
+
+.features-background {
+  padding-top: 5px;
+
+  color: #323232;
+
+  background: #e3d1a8 url('../img/features-background.jpg') repeat-x;
+  border-radius: 15px;
+}
+
+.shop-features h2 {
+  margin-left: 20px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 76px;
+  padding-bottom: 24px;
+
+  list-style: none;
+}
+
+.features-list li {
+  position: relative;
+
+  display: inline-block;
+  width: 480px;
+  margin-top: 1px;
+  margin-right: 83px;
+
+  vertical-align: top;
+}
+
+.features-list li::before {
+  content: url('../img/icecream-icon.svg');
+
+  position: absolute;
+  top: -13px;
+  left: -56px;
+}
+
+.features-list li:nth-child(2)::before {
+  content: url('../img/cow-icon.svg');
+}
+
+.features-list li:nth-child(3)::before {
+  content: url('../img/leaf-icon.svg');
+}
+
+.features-list li:nth-child(4)::before {
+  content: url('../img/termometer-icon.svg');
+}
+
+.features-list li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.features-list li:nth-child(n + 3) {
+  margin-top: 22px;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section-wrapper section {
+  width: 560px;
+
+  border-radius: 15px;
+}
+
+.blog-news {
+  padding-right: 255px;
+
+  background: #ffffff url('../img/strawberry-background.jpg') no-repeat;
+}
+
+.blog-news h2 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  margin-left: 20px;
+}
+
+.blog-news a {
+  display: block;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-bottom: 81px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.blog-news a:hover {
+  color: #e84d37;
+}
+
+.dispatch-form {
+  background: #fe9e90 repeating-linear-gradient(135deg,
+    white 8px,
+    #92cdff 8px,
+    #92cdff 15px,
+    white 15px,
+    white 22px,
+    #fe9e90 22px,
+    #fe9e90 29px,
+    white 29px,
+    white 36px
+    );
+    padding: 6px;
+}
+
+.dispatch-form-wrapper {
+  background-color: white;
+  border-radius: 15px;
+  padding: 28px 20px;
+}
+
+.dispatch-form-wrapper p {
+  margin: 0;
+  padding: 0;
+
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.dispatch-email-form input {
+  width: 368px;
+  margin-top: 36px;
+  margin-bottom: 6px;
+}
+
+.dispatch-email-form input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dispatch-email-form input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dispatch-email-form input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dispatch-email-form .button {
+  display: inline;
+  padding: 11px 18px;
+  margin-left: 8px;
+  border-radius: 30px;
 }
