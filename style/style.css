@@ -1475,8 +1475,39 @@ p.shop-work-time {
   border-radius: 25px;
 }
 
+.price-filters {
+  position: relative;
+}
+
 .price-filters legend {
+  display: inline;
+
   margin-left: 31px;
+}
+
+.price-filters input {
+  position: absolute;
+
+  padding: 0;
+  margin: 0;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  background-color: transparent;
+  border: none;
+}
+
+.price-filters input:first-of-type {
+  top: 0;
+  left: 72px;
+}
+
+.price-filters input:last-of-type {
+  top: 0;
+  left: 142px;
 }
 
 .price-range {
@@ -1502,8 +1533,8 @@ p.shop-work-time {
 
 .price-range .bar {
   height: 4px;
-  margin-left: 23px;
-  margin-right: 54px;
+  margin-left: 17px;
+  margin-right: 79px;
 
   background-color: rgb(255, 255, 255);
 }
@@ -1522,11 +1553,11 @@ p.shop-work-time {
 }
 
 .price-range .toggle-min {
-  left: 13px;
+  left: 17px;
 }
 
 .price-range .toggle-max {
-  right: 45px;
+  left: 88px;
 }
 
 .fat-filters legend {
