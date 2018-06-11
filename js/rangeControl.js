@@ -58,7 +58,7 @@
         newLeft = toggleMinCoords.left - scaleCoords.left + toggleMin.offsetWidth;
       }
 
-      bar.style.width = getCoords(toggleMax).left - getCoords(toggleMin).left + 'px';
+      bar.style.width = getCoords(toggleMax).left - getCoords(toggleMin).left + 4 + 'px';
 
       maxValue.value = calcPrice(newLeft - 20) + 'руб.';
 
