@@ -158,14 +158,16 @@
           </fieldset>
           <fieldset class="price-filters">
             <legend>Цена:</legend>
-            <label for="min-price">
-              <span class="visually-hidden">Минимальная цена</span>
-            </label>
-            <input id="min-price" type="text" name="min-price" value="200 руб. – ">
-            <label for="max-price">
-              <span class="visually-hidden">Максимальная цена</span>
-            </label>
-            <input id="max-price" type="text" name="max-price" value="500 руб.">
+            <p class="price-filters-wrapper">
+              <label for="min-price">
+                <span class="visually-hidden">Минимальная цена</span>
+              </label>
+              <input id="min-price" type="text" name="min-price" value="200 руб. – " readonly>
+              <label for="max-price">
+                <span class="visually-hidden">Максимальная цена</span>
+              </label>
+              <input id="max-price" type="text" name="max-price" value="500 руб." readonly>
+            </p>
             <div class="price-range">
               <div class="scale">
                 <div class="bar"></div>

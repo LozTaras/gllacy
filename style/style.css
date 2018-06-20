@@ -1479,6 +1479,14 @@ p.shop-work-time {
   position: relative;
 }
 
+.price-filters-wrapper {
+  position: relative;
+  bottom: 16px;
+
+  padding: 0;
+  margin: 0;
+}
+
 .price-filters legend {
   display: inline;
 

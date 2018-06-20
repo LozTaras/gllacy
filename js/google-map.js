@@ -9,7 +9,7 @@ function initMap() {
   var map = new google.maps.Map(elem, options);
 
   var marker = new google.maps.Marker({
-    position: { lat: 59.938526, lng: 30.323683},
+    position: { lat: 59.938526, lng: 30.322883},
     map: map,
     icon: 'img/pin.png',
   });
