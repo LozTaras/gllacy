@@ -1,4 +1,4 @@
-*, *::after, *::before {
+﻿*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -258,6 +258,30 @@ body {
 
   border: 1px solid #e5e5e3;
   border-radius: 5px;
+}
+
+
+.input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+
+.input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+
+.input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 
@@ -876,6 +900,21 @@ p.shop-work-time {
   margin-bottom: 6px;
 }
 
+.dispatch-email-form input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dispatch-email-form input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dispatch-email-form input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .dispatch-email-form input::placeholder {
   font-size: 16px;
   line-height: 24px;
@@ -927,11 +966,14 @@ p.shop-work-time {
 
   background-color: #ffffff;
   border-radius: 15px;
+  transition: -webkit-transform 200ms;
   transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
 }
 
 .shop-adress-details.hide {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .shop-adress-details p {
@@ -1157,6 +1199,24 @@ p.shop-work-time {
 .modal-contact-us textarea:focus {
   height: 155px;
   padding: 7px 12px;
+}
+
+.modal-contact-us textarea::-webkit-input-placeholder,
+.modal-contact-us input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-contact-us textarea:-ms-input-placeholder,
+.modal-contact-us input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-contact-us textarea::-ms-input-placeholder,
+.modal-contact-us input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .modal-contact-us textarea::placeholder,
@@ -1774,7 +1834,8 @@ p.shop-work-time {
   position: absolute;
   top: 3px;
   left: 80px;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
 }
 
 .catalog-list .catalog-item-price span {
@@ -1887,7 +1948,9 @@ p.shop-work-time {
   right: 203px;
   top: 0;
 
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+
+          transform: rotate(180deg);
 }
 
 .main-footer-delimiter {
